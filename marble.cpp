@@ -248,6 +248,7 @@ int main()
         node *n = frontier.top().first;
         if (isGoal(n->state))
         {
+            cout << "NO of nodes explored are " << ct << endl;
             showboard(goal);
             showboard(start->state);
             printsolution(n);
